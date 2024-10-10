@@ -1,0 +1,132 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #151515;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #3c3b3b;
+    color: rgb(12, 12, 12);
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.header-container h1 {
+    font-size: 2em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(19, 19, 19);
+    font-weight: bold;
+}
+
+/* Home Section */
+.home {
+    background-image: url("https://cdn.pixabay.com/photo/2023/11/14/15/46/nikon-8388022_1280.jpg");
+    background-position: center;
+    color: rgb(254, 254, 254);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.home-content h2 {
+    font-size: 3em;
+}
+
+/* Gallery Section */
+.gallery {
+    padding: 50px 20px;
+    background-color: #000000;
+    color: rgb(250, 247, 247);
+}
+
+.gallery h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+/* About Section */
+.about {
+    padding: 50px 20px;
+    background-color: #081f14;
+    color: rgb(250, 247, 247);
+    text-align: center;
+}
+
+.about h2 {
+    margin-bottom: 20px;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 20px;
+    background-color: #231405;
+    color: rgb(250, 247, 247);
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #ae9090;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
